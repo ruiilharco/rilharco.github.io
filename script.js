@@ -82,6 +82,11 @@ for(let i=0; i<portfolioItems.length; i++){
         lightbox.classList.add("lightbox-is-visible");
         currentItem=i;
         const format=portfolioItems[i].getAttribute("data-format");
+        const teste=portfolioItems[i].getAttribute(".teste");
+
+        if(teste==portfolioItems[0]){
+            href="/askbi/index.html"
+        }
 
         changeProjectInfo();
 
@@ -98,12 +103,10 @@ for(let i=0; i<portfolioItems.length; i++){
             formatType.innerHTML="Youtube Format";
         }
     })
-    teste();
+   
 }
 
-function teste(){
-    const btnpreview=portfolioItems[currentItem].querySelector(".teste");
-}
+
 
 function imageFormat(){
     const imgContainer=portfolioItems[currentItem].querySelector(".img");
