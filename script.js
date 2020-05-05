@@ -70,6 +70,8 @@ const sliderFormatContainer=document.querySelector(".slider-format");
 const prevSlide=sliderFormatContainer.querySelector(".prev-slide");
 const nextSlide=sliderFormatContainer.querySelector(".next-slide");
 const formatType=document.querySelector(".format-type");
+const btnpreview=document.querySelector(".btn-bg preview");
+const imp=document.querySelector(".teste");
 let currentItem;
 
 
@@ -96,6 +98,11 @@ for(let i=0; i<portfolioItems.length; i++){
             formatType.innerHTML="Youtube Format";
         }
     })
+    teste();
+}
+
+function teste(){
+    const btnpreview=portfolioItems[currentItem].querySelector(".teste");
 }
 
 function imageFormat(){
