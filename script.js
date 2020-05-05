@@ -73,6 +73,7 @@ const formatType=document.querySelector(".format-type");
 const btnpreview=document.querySelector(".btn-bg preview");
 const imp=document.querySelector(".teste");
 let currentItem;
+let prev;
 
 
 for(let i=0; i<portfolioItems.length; i++){
@@ -82,11 +83,9 @@ for(let i=0; i<portfolioItems.length; i++){
         lightbox.classList.add("lightbox-is-visible");
         currentItem=i;
         const format=portfolioItems[i].getAttribute("data-format");
-        const btnpreview=portfolioItems[i].getAttribute(".teste");
+        prev=portfolioItems[currentItem].querySelector(".test").getAttribute("href")
 
-        if(btnpreview==portfolioItems[0]){
-            href="/askbi/index.html"
-        }
+       
 
         changeProjectInfo();
 
@@ -105,6 +104,7 @@ for(let i=0; i<portfolioItems.length; i++){
     })
    
 }
+
 
 
 
