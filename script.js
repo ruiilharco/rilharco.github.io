@@ -82,9 +82,9 @@ for(let i=0; i<portfolioItems.length; i++){
         lightbox.classList.add("lightbox-is-visible");
         currentItem=i;
         const format=portfolioItems[i].getAttribute("data-format");
-        const teste=portfolioItems[i].getAttribute(".teste");
+        const btnpreview=portfolioItems[i].getAttribute(".teste");
 
-        if(teste==portfolioItems[0]){
+        if(btnpreview==portfolioItems[0]){
             href="/askbi/index.html"
         }
 
