@@ -70,7 +70,7 @@ const sliderFormatContainer=document.querySelector(".slider-format");
 const prevSlide=sliderFormatContainer.querySelector(".prev-slide");
 const nextSlide=sliderFormatContainer.querySelector(".next-slide");
 const formatType=document.querySelector(".format-type");
-const btnpreview=document.querySelector(".btn-bg preview");
+const btnpreview=document.querySelector(".fa fa-external-link");
 const imp=document.querySelector(".teste");
 let currentItem;
 let prev;
@@ -85,7 +85,7 @@ for(let i=0; i<portfolioItems.length; i++){
         const format=portfolioItems[i].getAttribute("data-format");
         prev=portfolioItems[currentItem].querySelector(".test").getAttribute("href")
 
-       
+        preview();
 
         changeProjectInfo();
 
@@ -105,6 +105,9 @@ for(let i=0; i<portfolioItems.length; i++){
    
 }
 
+function preview(){
+btnpreview=portfolioItems[currentItem].querySelector("href")
+}
 
 
 
