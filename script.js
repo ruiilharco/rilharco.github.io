@@ -83,9 +83,7 @@ for(let i=0; i<portfolioItems.length; i++){
         lightbox.classList.add("lightbox-is-visible");
         currentItem=i;
         const format=portfolioItems[i].getAttribute("data-format");
-        prev=portfolioItems[currentItem].querySelector(".test").getAttribute("href")
-
-        preview();
+        
 
         changeProjectInfo();
 
