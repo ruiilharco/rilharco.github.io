@@ -73,7 +73,7 @@ const formatType=document.querySelector(".format-type");
 const btnpreview=document.querySelector(".fa fa-external-link");
 const imp=document.querySelector(".teste");
 let currentItem;
-let prev;
+//let prev;
 
 
 for(let i=0; i<portfolioItems.length; i++){
